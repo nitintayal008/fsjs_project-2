@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Rose", cursive;
+
+}
+body{
+  background-image: url("assets/main.png");
+  background-size: cover  ;
+
+}
+.container {
+  margin: 10px 70px 0px;
+  padding: 20px 30px;
+}
+/* ---------- NAVBAR ------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.list-item {
+  margin: auto 50px;
+  padding: auto 20px;
+  font-size: 20px;
+  list-style: none;
+}
+
+.button-small {
+  font-size: 30px;
+  width: 175%;
+  height: 80%;
+  background-color: rgb(244, 104, 104);
+  color: #fff;
+  border: 0px;
+}
+
+/* ---------- HERO ------------ */
+.hero {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-heading {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 60px;
+  text-align: center;
+  padding: 0 12%;
+  line-height: 1.2;
+  letter-spacing: 5px;
+  color: #f5c907;
+}
+
+.button-large {
+  margin-top: 40px;
+  background-color: #ef5354;
+  width: 20%;
+  border: none;
+  color: #ffffff;
+  padding: 20px 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.bottom img {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  height: 9rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .hero-heading {
+    font-size: 66px;
+    padding: 2% 6%;
+  }
+  .button-large {
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .list-item {
+    display: none;
+  }
+  .button-small {
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+  .hero-heading {
+    margin-top: 80px;
+    font-size: 44px;
+  }
+  .button-large {
+    width: 34%;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .button-small {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+  .logo {
+    height: 2rem;
+  }
+  .hero-heading {
+    margin-top: 120px;
+    font-size: 40px;
+  }
+  .button-large {
+    width: 80%;
+  }
+  .bottom img {
+    height: 5rem;
+  }
+}
+
